@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Becca Stanger</title>
+  <meta name="keywords" content="Becca Stanger UX Frontend Developer Engineer HTML CSS JavaScript Portfolio">
+  <meta name="description" content="The Portfolio of Becca Stanger - Frontend Designer and Developer">
+  <meta name="author" content="Becca Stanger">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/> -->
+  <link rel="icon" href="images/becca-stanger-icon.png">
+
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="libraries/slick/slick.min.js"></script> -->
+
+</head>
+
+<body>
+
+  <!-- <script type="text/javascript" src="libraries/slick/slick.min.js"></script>
+  <script src="js/carousel.js"></script> -->
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 3
+      });
+    });
+  </script>
+
+  <nav class="nav-bar js-nav-bar is-scrolled">
+    <div class="nav-bar__container">
+      <div class="nav-bar__left nav-bar__logo"><a href="home">Becca Stanger</a></div>
+      <div class="nav-bar__right">
+        <ul class="nav-bar__menu">
+          <li class="nav-bar__work"><a href="home">Work</a></li>
+          <li class="nav-bar__about"><a href="about">About</a></li>
+          <li class="nav-bar__resume"><a href="resume">Resume</a></li>
+          <li class="nav-bar__contact"><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h3 class="header__subtitle">KSS-Node Styleguide</h3>
+  </header>
+
+
+  <!-- BEGIN PAGE SECTION -->
+
+  <!-- <section class="styleguide main-block">
+    <div class="carousel slider single-item slick-initialized slick-slider slick-dotted">
+      <div class="slick-list" aria-live="polite">
+        <div class="slick-track">
+          <div class="carousel-slide slick-slide slick-current slick-active" data-slick-index="0" aria-describedby="slick-slide00" aria-hidden="false" tabindex="-1">slide 1</div>
+          <div class="carousel-slide slick-slide" data-slick-index="1" aria-describedby="slick-slide01" aria-hidden="true" tabindex="-1">slide 2</div>
+          <div class="carousel-slide slick-slide" data-slick-index="2" aria-describedby="slick-slide02" aria-hidden="true" tabindex="-1">slide 3</div>
+        </div>
+      </div>
+      <ul class="slick-dots">
+        <li id="slick-slide00"><button tabindex="0"></button></li>
+        <li id="slick-slide01"><button tabindex="0"></button></li>
+        <li id="slick-slide02"><button tabindex="0"></button></li>
+      </ul>
+    </div>
+  </section> -->
+
+  <section class="styleguide main-block">
+
+  </section>
+
+  <!-- END PAGE SECTION -->
+
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h5 class="footer__copyright">Becca Stanger 2017</h5>
+      <h5 class="footer__social-media-wrapper">
+        <div class="footer__social-media">
+          <a href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </div>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>

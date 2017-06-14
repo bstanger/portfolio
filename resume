@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Becca Stanger</title>
+  <meta name="keywords" content="Becca Stanger UX Frontend Developer Engineer HTML CSS JavaScript Portfolio">
+  <meta name="description" content="The Portfolio of Becca Stanger - Frontend Designer and Developer">
+  <meta name="author" content="Becca Stanger">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="images/becca-stanger-icon.png">
+
+  <script src="js/resume.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="nav-bar js-nav-bar is-scrolled">
+    <div class="nav-bar__container">
+      <div class="nav-bar__left nav-bar__logo"><a href="home">Becca Stanger</a></div>
+      <div class="nav-bar__center">
+        <a href="https://www.scribd.com/document/350470653/Becca-Stanger-Resume#download&from_embed" target="blank"><button class="resume__download-btn in-header js-download-resume">Download My Resume</button></a>
+      </div>
+      <div class="nav-bar__right">
+        <ul class="nav-bar__menu">
+          <li class="nav-bar__work"><a href="home">Work</a></li>
+          <li class="nav-bar__about"><a href="about">About</a></li>
+          <li class="nav-bar__resume"><a href="resume">Resume</a></li>
+          <li class="nav-bar__contact"><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h2 class="header__subtitle">Resume</h2>
+  </header>
+
+
+  <!-- BEGIN PAGE SECTION -->
+
+  <section class="resume__main main-block">
+    <iframe class="scribd_iframe_embed" src="https://www.scribd.com/embeds/350470653/content?start_page=1&view_mode=scroll&access_key=key-Qhpnuj1HbmsGZJhi0EpM&show_recommendations=true" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_2127" width="900" height="1200" frameborder="0"></iframe>
+  </section>
+
+  <!-- END PAGE SECTION -->
+
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h5 class="footer__copyright">Becca Stanger 2017</h5>
+      <h5 class="footer__social-media-wrapper">
+        <div class="footer__social-media">
+          <a href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </div>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>
