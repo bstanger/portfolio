@@ -7,10 +7,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-ul li {
-  display: inline-block;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -22,10 +18,38 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 0.875em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
 //////////////////////////////////// VARIABLES /////////////////////////////
 @blue: #222f51;
 @teal: #29a485;
+@teal-dark: #20836A;
+@grey-light: #fcfcfc;
 @grey: #fafafa;
+@grey-border: #ccc;
+@grey-text: #555;
 @max-page-width: 80em;
 
 //////////////////////////////////// STYLEGUIDES //////////////////////////
@@ -34,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p {
   height: 1.875em;
   padding: 0 1.25em;
   border: 3px solid @teal;
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: @teal;
   color: #fff;
   font-size: 1em;
@@ -43,10 +67,32 @@ h1, h2, h3, h4, h5, h6, p {
   transition: opacity 300ms ease-in;
 }
 
+.becca-button--large {
+  height: 2.4em;
+  padding: 0 4.5em;
+  border: 3px solid @teal;
+  border-radius: 15px;
+  background-color: @teal;
+  color: #fff;
+  font-size: 1.35em;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 300ms ease-in;
+
+  &:hover {
+    border-color: @teal-dark;
+    background-color: @teal-dark;
+  }
+}
+
 .in-header {
   &:hover {
     background-color: @blue;
   }
+}
+
+.bold {
+  font-weight: 600;
 }
 
 ////////////////////////////////////// HOME PAGE //////////////////////////
@@ -65,6 +111,10 @@ h1, h2, h3, h4, h5, h6, p {
 
   &.is-scrolled {
     opacity: 0.9;
+  }
+
+  ul li {
+    display: inline-block;
   }
 }
 
@@ -110,10 +160,27 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: @blue;
   color: #fff;
 
+  &.for-project-page {
+    padding: 7.125em 2em 2em;
+  }
+
   .header__subtitle {
-    margin: 0 3em;
+    // margin: 0 3em;
     font-size: 3em;
     font-weight: 400;
+  }
+
+  .header__page-title {
+    margin: 0.625em auto 0.25em;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .header__page-subtitle {
+    font-size: 1.15em;
+    font-weight: 200;
+    text-align: center;
   }
 
   &.is-home {
@@ -142,16 +209,104 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
 }
 
-.header__subtitle {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 300;
-}
+// .header__subtitle {
+//   margin: 0;
+//   font-size: 1.2em;
+//   font-weight: 300;
+// }
 
 ///////////////////////////////////// GLOBAL BODY STYLING /////////////////
 
 .main-block {
   width: 100vw;
+}
+
+.main-block__header,
+.main-block__section-header {
+  font-size: 2.4em;
+  line-height: 1.2;
+  margin: 1.875em 0 0;
+  text-align: center;
+}
+
+.main-block__subheader {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 0.5em 0 1.875em;
+  text-align: center;
+}
+
+.block {
+  background-color: @grey;
+}
+
+.centered-block {
+  display: flex;///////////////////////////////////// FOOTER /////////////////////////////////
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  background-color: @grey-light;
+  border: 1px solid @grey-border;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 2.5em 0;
+}
+
+.box-header {
+  background-color: #fff;
+  border-bottom: 1px solid @grey-border;
+  padding: 0.625em;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.box-body {
+  padding: 1.625em;
+  color: @grey-text;
+  line-height: 1.7;
+}
+
+.page-image {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid @grey-border;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.text-block {
+  margin: 2.5em 0;
+
+  .text-block__header {
+    font-weight: 500;
+  }
+
+  p {
+    color: @grey-text;
+    line-height: 1.7;
+    margin-bottom: 0.625em;
+  }
+}
+
+// .main-block__section-header {
+//   font-size: 2.4em;
+//   line-height: 1.2;
+//   margin: 1.875em 0;
+//   text-align: center;
+// }
+
+.social-media-icon i {
+  display: inline-block;
+  margin: 0.6em;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  &:hover {
+    color: @teal;
+  }
 }
 
 // .carousel {
@@ -167,10 +322,6 @@ h1, h2, h3, h4, h5, h6, p {
 // }
 
 ///////////////////////////////////// HOME BODY ///////////////////////////
-
-.main-block {
-  width: 100vw;
-}
 
 .home__tile-block {
   margin: 2em auto 3em;
@@ -238,10 +389,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home__tile-styleguide {
-
+  background-image: url("../images/styleguide.png");
+  background-size: cover;
 
   &:after {
-    content: "KSS Node Styleguide";
+    content: "Living Styleguide";
   }
 }
 
@@ -254,7 +406,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home__tile-snapily {
-
+  background-image: url("../images/snapily-logo.jpeg");
+  background-size: cover;
 
   &:after {
     content: "Snapily";
@@ -278,6 +431,95 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 2.5em 0;
 }
 
+///////////////////////////////////// CONTACT BODY ///////////////////////////
+
+
+.contact__email-link {
+  display: block;
+  max-width: 18.75em;
+  margin: 1.25em auto;
+}
+.contact__email-me {
+  .becca-button--large;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact__social-media-wrapper {
+  max-width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 1.875em;
+  display: flex;
+  justify-content: space-around;
+
+  .social-media-icon {
+    font-size: 3em;
+  }
+}
+
+// .contact__form {
+//   max-width: 40vw;
+//   margin: 0 auto;
+//
+//   * {
+//     display: block;
+//     width: 100%;
+//   }
+//
+//   input,
+//   textarea {
+//     box-sizing: border-box;
+//     font-size: 0.875em;
+//     line-height: 1.5;
+//     padding: 0 10px;
+//   }
+//
+//   input {
+//     height: 3em;
+//     margin: 0.5em 0 1em;
+//
+//     &:last-child {
+//       margin: 0;
+//     }
+//   }
+//
+//   label {
+//     font-weight: 500;
+//   }
+//
+//   label[for=message] {
+//     margin: 1.5em 0 0;
+//   }
+//
+//   textarea {
+//     height: 12.5em;
+//     margin: 0.5em 0 2.5em;
+//     border-color: @grey-border;
+//   }
+// }
+//
+// .contact__send-button {
+//   .becca-button;
+//   width: 100%;
+// }
+
+.contact__section-header {
+  margin: 2em 0 0 0;
+  padding: 1em 0 0.5em;
+}
+
+///////////////////////////////////// SUMMARY ////////////////////////////////
+
+// .summary__label {
+//   font-weight: 500;
+// }
+
+///////////////////////////////////// STYLEGUIDE ////////////////////////////////
+.styleguide__main-content,
+.snapily__main-content {
+  width: 70vw;
+  margin: 0 auto;
+}
 ///////////////////////////////////// FOOTER /////////////////////////////////
 
 .footer {
@@ -303,15 +545,4 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   font-size: 0.75em;
   font-weight: 300;
-}
-
-.footer__social-media i {
-  display: inline-block;
-  margin: 0.6em;
-  font-size: 1.5em;
-  cursor: pointer;
-
-  &:hover {
-    color: @teal;
-  }
 }

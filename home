@@ -10,7 +10,7 @@
   <meta name="author" content="Becca Stanger">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -25,7 +25,7 @@
       <div class="nav-bar__right">
         <ul class="nav-bar__menu">
           <li class="nav-bar__work"><a href="home">Work</a></li>
-          <li class="nav-bar__about"><a href="about">About</a></li>
+          <!-- <li class="nav-bar__about"><a href="about">About</a></li> -->
           <li class="nav-bar__resume"><a href="resume">Resume</a></li>
           <li class="nav-bar__contact"><a href="contact">Contact</a></li>
         </ul>
@@ -44,12 +44,12 @@
 
   <section class="home__main main-block">
     <div class="home__tile-block">
-      <a class="home__tile-flex home__tile" href="https://codepen.io/bstang/pen/VpOXoq"></a>
+      <a class="home__tile-flex home__tile" target="blank" href="https://codepen.io/bstang/pen/VpOXoq"></a>
       <div class="home__tile-releases home__tile"></div>
       <div class="home__tile-backbone home__tile"></div>
       <a class="home__tile-styleguide home__tile" href="styleguide"></a>
       <div class="home__tile-css-rearch home__tile"></div>
-      <div class="home__tile-snapily home__tile"></div>
+      <div class="home__tile-snapily home__tile" href="snapily"></div>
     </div>
   </section>
 
@@ -61,10 +61,10 @@
       <h5 class="footer__copyright">Becca Stanger 2017</h5>
       <h5 class="footer__social-media-wrapper">
         <div class="footer__social-media">
-          <a href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
         </div>
       </h5>
     </div>

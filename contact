@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Becca Stanger</title>
+  <meta name="keywords" content="Becca Stanger UX Frontend Developer Engineer HTML CSS JavaScript Portfolio">
+  <meta name="description" content="The Portfolio of Becca Stanger - Frontend Designer and Developer">
+  <meta name="author" content="Becca Stanger">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="images/becca-stanger-icon.png">
+
+</head>
+
+<body>
+
+  <nav class="nav-bar js-nav-bar is-scrolled">
+    <div class="nav-bar__container">
+      <div class="nav-bar__left nav-bar__logo"><a href="home">Becca Stanger</a></div>
+      <div class="nav-bar__center">
+        <a href="https://www.scribd.com/document/350470653/Becca-Stanger-Resume#download&from_embed" target="blank"><button class="resume__download-btn in-header js-download-resume">Download My Resume</button></a>
+      </div>
+      <div class="nav-bar__right">
+        <ul class="nav-bar__menu">
+          <li class="nav-bar__work"><a href="home">Work</a></li>
+          <!-- <li class="nav-bar__about"><a href="about">About</a></li> -->
+          <li class="nav-bar__resume"><a href="resume">Resume</a></li>
+          <li class="nav-bar__contact"><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h4 class="header__subtitle">Contact</h4>
+  </header>
+
+
+  <!-- BEGIN PAGE SECTION -->
+
+  <section class="contact__main main-block">
+
+    <section class="block-b">
+      <h3 class="main-block__header">Questions?  Comments?</h3>
+      <a class="contact__email-link" href="mailto:beccastanger@gmail.com"><button class="contact__email-me">Email Me</button></a>
+    </section>
+
+    <!-- <form class="contact__form" action="mailto:beccastanger@gmail.com" method="post" enctype="text/plain">
+      <label>From:</label>
+      <input type="text" name="name" id="name" placeholder="Name">
+      <input type="text" name="mail" id="email" placeholder="Email">
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" size="50"></textarea>
+      <input class="contact__send-button" type="submit" value="Send">
+    </form> -->
+
+    <section class="block">
+      <h4 class="contact__section-header main-block__section-header">Or follow me</h4>
+      <div class="contact__social-media-wrapper">
+        <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- END PAGE SECTION -->
+
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h5 class="footer__copyright">Becca Stanger 2017</h5>
+      <h5 class="footer__social-media-wrapper">
+        <div class="footer__social-media">
+          <a class="social-media-icon" href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </div>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>

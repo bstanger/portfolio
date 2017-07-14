@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Becca Stanger</title>
+  <meta name="keywords" content="Becca Stanger UX Frontend Developer Engineer HTML CSS JavaScript Portfolio">
+  <meta name="description" content="The Portfolio of Becca Stanger - Frontend Designer and Developer">
+  <meta name="author" content="Becca Stanger">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/> -->
+  <link rel="icon" href="images/becca-stanger-icon.png">
+
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="libraries/slick/slick.min.js"></script> -->
+
+</head>
+
+<body>
+
+  <nav class="nav-bar js-nav-bar is-scrolled">
+    <div class="nav-bar__container">
+      <div class="nav-bar__left nav-bar__logo"><a href="home">Becca Stanger</a></div>
+      <div class="nav-bar__right">
+        <ul class="nav-bar__menu">
+          <li class="nav-bar__work"><a href="home">Work</a></li>
+          <!-- <li class="nav-bar__about"><a href="about">About</a></li> -->
+          <li class="nav-bar__resume"><a href="resume">Resume</a></li>
+          <li class="nav-bar__contact"><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header for-project-page">
+    <h4 class="header__page-title">Snapily</h4>
+    <h5 class="header__page-subtitle">Project Management, UX Research, Mobile UX Design</h5>
+  </header>
+
+
+  <!-- BEGIN PAGE SECTION -->
+
+  <section class="main-block">
+    <section class="snapily__main-content">
+
+      <section class="box">
+        <div class="box-header">Goal:</div>
+        <div class="box-body">
+          For the <span class="bold">capstone project</span> of our Master's degree, we were giving free reign to design a technological solution to any project we found interesting.  We chose to focus on food justice.
+          <p>Nationwide, 13.5 million low-income Americans live in "food deserts" - neighborhoods lacking access to grocery stores that provide fresh, healthy, and affordable food.  Meanwhile, grocery delivery technology services that could potentially serve these neighborhoods are rapidly expanding.  These technologies, however, cannot accept payments for the federal food stamps (SNAP) or nutrition assistance programs (WIC) that many low income residents use to pay for groceries.  In hopes of alleviating this injustice, three I School classmates and I designed and prototyped a
+          <span class="bold">grocery delivery app for low-income, food desert communities</span>.</p>
+        </div>
+      </section>
+
+      <img class="page-image"src="images/snapily-logo.jpeg" />
+
+      <section class="text-block">
+        <header class="text-block__header">Contextual Research</header>
+        <p>To create a well-designed solution, we started by better understanding the problem itself through contextual research.  We conducted 12 contextual interviews with a wide range of leaders working in the field, including food justice nonprofits, county social service offices, financial technology companies, and more.  We also conducted user observations and field visits at grocery stores with SNAP participants to better understand the shopping experience of our users.  We also performed demographics research to narrow our target user population and performed a competitive analysis to understand the strengths and weakness of 7 similar products in the field.</p>
+      </section>
+
+      <section class="box">
+        <div class="box-header">Reflection:</div>
+        <div class="box-body">
+          <p>Snapily showed me the bigger picture.  My previous work projects and school assignments had generally focused on one particular step of the product lifestyle.  But with a 7 month project like Snapily we were able to pull together everything we had learned in school and internships.  We took a product through all the necessary ideation, research, and design steps necessary to launch a product on our own.  I now understand how important and impactful each of these stages is.</p>
+          <p>On a more personal professional level, this project clearly demonstrated to me that I thrive in self-starter situations.  Although the initial lack of oversight  or structure may seem daunting at first, I find it helps motivate me to plan and drive a product through to the end.  With that motivation and a strong team of passionate, thoughtful individuals, it's possible to create a great product.</p>
+        </div>
+      </section>
+
+
+    </section>
+
+  </section>
+
+  <!-- END PAGE SECTION -->
+
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h5 class="footer__copyright">Becca Stanger 2017</h5>
+      <h5 class="footer__social-media-wrapper">
+        <div class="footer__social-media">
+          <a class="social-media-icon" href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </div>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>

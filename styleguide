@@ -10,7 +10,7 @@
   <meta name="author" content="Becca Stanger">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -46,7 +46,7 @@
       <div class="nav-bar__right">
         <ul class="nav-bar__menu">
           <li class="nav-bar__work"><a href="home">Work</a></li>
-          <li class="nav-bar__about"><a href="about">About</a></li>
+          <!-- <li class="nav-bar__about"><a href="about">About</a></li> -->
           <li class="nav-bar__resume"><a href="resume">Resume</a></li>
           <li class="nav-bar__contact"><a href="contact">Contact</a></li>
         </ul>
@@ -54,31 +54,78 @@
     </div>
   </nav>
 
-  <header class="header">
-    <h3 class="header__subtitle">KSS-Node Styleguide</h3>
+  <header class="header for-project-page">
+    <h4 class="header__page-title">Living Styleguide</h4>
+    <h5 class="header__page-subtitle">KSS-Node, Visual Design, Less</h5>
   </header>
 
 
   <!-- BEGIN PAGE SECTION -->
 
-  <!-- <section class="styleguide main-block">
-    <div class="carousel slider single-item slick-initialized slick-slider slick-dotted">
-      <div class="slick-list" aria-live="polite">
-        <div class="slick-track">
-          <div class="carousel-slide slick-slide slick-current slick-active" data-slick-index="0" aria-describedby="slick-slide00" aria-hidden="false" tabindex="-1">slide 1</div>
-          <div class="carousel-slide slick-slide" data-slick-index="1" aria-describedby="slick-slide01" aria-hidden="true" tabindex="-1">slide 2</div>
-          <div class="carousel-slide slick-slide" data-slick-index="2" aria-describedby="slick-slide02" aria-hidden="true" tabindex="-1">slide 3</div>
-        </div>
-      </div>
-      <ul class="slick-dots">
-        <li id="slick-slide00"><button tabindex="0"></button></li>
-        <li id="slick-slide01"><button tabindex="0"></button></li>
-        <li id="slick-slide02"><button tabindex="0"></button></li>
-      </ul>
-    </div>
-  </section> -->
+  <section class="styleguide__main main-block">
+    <section class="styleguide__main-content">
 
-  <section class="styleguide main-block">
+      <section class="box">
+        <div class="box-header">Goal:</div>
+        <div class="box-body">
+          When I joined, StudyBlue's stylings were fairly inconsistent.  Different designers and engineers had built buttons, for example, in many different shapes, sizes, and colors.  StudyBlue asked me to create a
+          <span class="bold">living, online styleguide </span>
+          offering design guidelines that could
+          <span class="bold">promote design consistency</span> and
+          <span class="bold">increase the speed</span>
+          of both the design and the development process.
+        </div>
+      </section>
+
+      <img class="page-image"src="images/styleguide.png" />
+
+      <section class="text-block">
+        <p>I started this process by researching which styleguide framework would work best for our current team and tech stack.  I researched different options between static and living styleguides using tools such as Frontify, Pears, SourceJS, KSS-node, and a gem.  I then gathered this research and presented it to my teammates.  We decided KSS-node was the best fit for our tech stack at the time.</p>
+      </section>
+
+      <img class="page-image"src="images/styleguide-options-chart.png" />
+
+      <section class="text-block">
+        <p>After we had finalized our framework, I worked with our Product and Design team to decide which design elements we should work on standardizing first.</p>
+        <p>Our lead UI designer then created a master Sketch file to outline what he wanted our elements to look like.  I translated these design requirements into CSS expressions contained in global LESS mixins.  Other developers could then use these standardized styles by simply adding a class name to the HTML template.</p>
+      </section>
+
+      <img class="page-image"src="images/styleguide-sketch.png" />
+
+      <section class="text-block">
+        <p>Since adding new class names to templates could potentially cause confusion, I also worked with the rest of our Frontend team to develop a new standard for class names.  I researched different recommended models in the field and created one similar to the BEM model.  An example of a class name for a subelement would be something like  "pricing-tile__features-list."  And to make sure changes to these class names didn't disrupt any functionalities associated with that element through jQuery, we began adding classes starting with a "js-" to represent any elements selected with jQuery to further separate design and functionality.</p>
+        <p>Finally I built styleguide pages to demonstrate these new standardized styles to developers and designers alike with the help of KSS-node.  Using it's specialized templating language, I built pages offering descriptions, use cases, visual examples, and HTML examples of the newly standardized elements.  Developers could then simply copy the HTML to create a new instance of the style and designers could copy the style while designing new features.</p>
+      </section>
+
+      <img class="page-image"src="images/styleguide-kss-code.png" />
+
+      <section class="box">
+        <div class="box-header">Reflection:</div>
+        <div class="box-body">
+          From this experience building the StudyBlue styleguide, I've learned that teamwork and process are essential components of building a useful styleguide.  It's important to keep all members of the team, including both designers and engineers,  involved and informed about the styleguide process so that they keep it in mind in their work.  It's much easier to maintain and build styleguide standards when there's buy in from the whole team rather than having a single person advocating for the work.  In addition, it's understandably easier for styleguide work to be considered a lower priority in the grand scheme of a company's work, so it's essential to find a way to integrate the styleguide work throughout the entire design and development process.  I plan to keep these principles in mind as I continue to work on developing styleguides.
+        </div>
+      </section>
+
+
+
+
+    </section>
+
+    <!-- <section class="box">
+      <div class="box-header">Summary</div>
+      <div class="box-body">
+        <p class="summary__label">Date:</p>
+        <ul>
+          <li>2015 - 2017</li>
+        </ul>
+        <p class="summary__label">Team:</p>
+        <ul>
+          <li>Lead Frontend Developer</li>
+          <li>Designers (2)</li>
+          <li>Head of Product</li>
+        </ul>
+      </div>
+    </section> -->
 
   </section>
 
@@ -90,10 +137,10 @@
       <h5 class="footer__copyright">Becca Stanger 2017</h5>
       <h5 class="footer__social-media-wrapper">
         <div class="footer__social-media">
-          <a href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="mailto:beccastanger@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
         </div>
       </h5>
     </div>
