@@ -43,7 +43,7 @@
 
   <header class="header for-project-page">
     <h4 class="header__page-title">Snapily</h4>
-    <h5 class="header__page-subtitle">Project Management, UX Research, Mobile UX Design</h5>
+    <h5 class="header__page-subtitle">Project Management, UX Research, Mobile Prototyping</h5>
   </header>
 
 
@@ -55,17 +55,78 @@
       <section class="box">
         <div class="box-header">Goal:</div>
         <div class="box-body">
-          For the <span class="bold">capstone project</span> of our Master's degree, we were giving free reign to design a technological solution to any project we found interesting.  We chose to focus on food justice.
+          <p>For the <span class="bold">capstone project</span> of our Master's degree, we were giving free reign to design a technological solution to any project we found interesting.  We chose to focus on food justice.</p>
           <p>Nationwide, 13.5 million low-income Americans live in "food deserts" - neighborhoods lacking access to grocery stores that provide fresh, healthy, and affordable food.  Meanwhile, grocery delivery technology services that could potentially serve these neighborhoods are rapidly expanding.  These technologies, however, cannot accept payments for the federal food stamps (SNAP) or nutrition assistance programs (WIC) that many low income residents use to pay for groceries.  In hopes of alleviating this injustice, three I School classmates and I designed and prototyped a
           <span class="bold">grocery delivery app for low-income, food desert communities</span>.</p>
         </div>
       </section>
 
-      <img class="page-image"src="images/snapily-logo.jpeg" />
+      <img class="page-image snapily-logo" src="images/snapily-logo.jpeg" />
 
       <section class="text-block">
         <header class="text-block__header">Contextual Research</header>
         <p>To create a well-designed solution, we started by better understanding the problem itself through contextual research.  We conducted 12 contextual interviews with a wide range of leaders working in the field, including food justice nonprofits, county social service offices, financial technology companies, and more.  We also conducted user observations and field visits at grocery stores with SNAP participants to better understand the shopping experience of our users.  We also performed demographics research to narrow our target user population and performed a competitive analysis to understand the strengths and weakness of 7 similar products in the field.</p>
+      </section>
+
+      <img class="page-image snapily-context" src="images/snapily-contextual-research.jpeg" />
+
+      <section class="text-block">
+        <header class="text-block__header">User Research</header>
+        <p>Next we dug into better understanding our users and their needs.  Through a series of user interviews, mapping activities, and surveys we talked to 68 users in Bay Area food desert communities.</p>
+      </section>
+
+      <div class="page-image-set-3">
+        <div><img class="page-image" src="images/snapily-user-research-1.jpeg" /></div>
+        <div><img class="page-image" src="images/snapily-user-research-2.jpeg" /></div>
+        <div><img class="page-image" src="images/snapily-user-research-3.jpeg" /></div>
+      </div>
+
+      <section class="text-block">
+        <p>We then synthesized all of this research together by creating an affinity diagram, user personas, and a journey map.  Based on this research we decided on the following conclusions for our project:</p>
+        <ul>
+          <li>switch our delivery system to a pick up model rather than a door-to-door service</li>
+          <li>target a user population with a slightly higher income and more technology access</li>
+          <li>focus more on the Women, Infant, and Children (WIC) nutrition assistance program</li>
+          <li>prioritize price transparency in our app design</li>
+        </ul>
+      </section>
+
+      <section class="text-block">
+        <header class="text-block__header">Prototyping and User Testing</header>
+        <p>Next we began designing and building our product.  We started by wireframing three key user flows  - searching for bargains, shopping with WIC, and shopping for regular groceries.</p>
+      </section>
+
+      <div class="page-image-set-3">
+        <div><img class="page-image" src="images/snapily-prototyping-1.jpeg" /></div>
+        <div><img class="page-image" src="images/snapily-prototyping-2.jpeg" /></div>
+        <div><img class="page-image" src="images/snapily-prototyping-3.jpeg" /></div>
+      </div>
+
+      <section class="text-block">
+        <p>We then created 4 prototype iterations - one paper and three interactive.  We conducted 8 usability tests with users matching our target population to assess what features of these prototypes did or did not match our users' needs.  From this flow we created flows to allow users to shop for bargains or shop by WIC checks.  We also focused on streamlining the payment transaction process.</p>
+      </section>
+
+      <div class="page-image-set-2">
+        <div><img class="page-image" src="images/snapily-paper-1.jpeg" /></div>
+        <div><img class="page-image" src="images/snapily-paper-2.png" /></div>
+      </div>
+
+      <section class="text-block">
+        <header class="text-block__header">Systems Design</header>
+        <p>Throughout our project, we continuously got questions from potential users and interested parties in some of the more specific logistics of how our business would operate.  To better address these questions, we discussed and designed 4 system design diagrams to specify exactly how data, users, and products would interact.</p>
+      </section>
+
+      <section class="box">
+        <div class="box-header">Results:</div>
+        <div class="box-body">
+          <p>Upon presenting the idea and prototype for Snapily in May to both the CITRIS Mobile App Challenge and our I School community, our team was pleased to win the following awards:</p>
+          <ul>
+            <li>CITRIS Mobile App Challenge - Grand Prize</li>
+            <li>CITRIS Mobile App Challenge - People's Choice</li>
+            <li>I School Dr. James R. Chen Award - Track 1: Moving People and Prices</li>
+            <li>I School Final Project Video Award - Third Place</li>
+          </ul>
+        </div>
       </section>
 
       <section class="box">

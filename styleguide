@@ -30,7 +30,7 @@
   <!-- <script type="text/javascript" src="libraries/slick/slick.min.js"></script>
   <script src="js/carousel.js"></script> -->
 
-  <script>
+  <!-- <script>
     $(document).ready(function(){
       $('.carousel').slick({
         dots: true,
@@ -38,7 +38,7 @@
         slidesToShow: 3
       });
     });
-  </script>
+  </script> -->
 
   <nav class="nav-bar js-nav-bar is-scrolled">
     <div class="nav-bar__container">

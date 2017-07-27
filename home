@@ -44,12 +44,22 @@
 
   <section class="home__main main-block">
     <div class="home__tile-block">
-      <a class="home__tile-flex home__tile" target="blank" href="https://codepen.io/bstang/pen/VpOXoq"></a>
-      <div class="home__tile-releases home__tile"></div>
-      <div class="home__tile-backbone home__tile"></div>
-      <a class="home__tile-styleguide home__tile" href="styleguide"></a>
-      <div class="home__tile-css-rearch home__tile"></div>
-      <div class="home__tile-snapily home__tile" href="snapily"></div>
+      <a class="home__tile-sidebar home__tile" href="sidebar">
+        <div class="home__tile-subtitle">CSS flex, Javascript, JQuery</div>
+      </a>
+      <!-- <div class="home__tile-backbone home__tile"></div> -->
+      <a class="home__tile-styleguide home__tile" href="styleguide">
+        <div class="home__tile-subtitle">KSS-Node, visual design, Less</div>
+      </a>
+      <a class="home__tile-css-rearch home__tile" href="css-rearch">
+        <div class="home__tile-subtitle">Less, CSS architecture, refactoring</div>
+      </a>
+      <a class="home__tile-releases home__tile" href="releases">
+        <div class="home__tile-subtitle">Project management</div>
+      </a>
+      <a class="home__tile-snapily home__tile" href="snapily">
+        <div class="home__tile-subtitle">Project management, UX research, mobile prototyping</div>
+      </a>
     </div>
   </section>
 

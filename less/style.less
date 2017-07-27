@@ -241,7 +241,7 @@ h6 {
 }
 
 .centered-block {
-  display: flex;///////////////////////////////////// FOOTER /////////////////////////////////
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -267,6 +267,27 @@ h6 {
   padding: 1.625em;
   color: @grey-text;
   line-height: 1.7;
+}
+
+.box-body p:not(:last-of-type){
+  margin-bottom: 1em;
+}
+
+.page-image-set-2,
+.page-image-set-3 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.page-image-set-2 .page-image {
+    width: 400px;
+    margin: 20px;
+}
+
+.page-image-set-3 .page-image {
+    width: 250px;
+    margin: 14px;
 }
 
 .page-image {
@@ -325,7 +346,7 @@ h6 {
 
 .home__tile-block {
   margin: 2em auto 3em;
-  max-width: 80vw;
+  max-width: 90vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -333,7 +354,7 @@ h6 {
 
 .home__tile {
   position: relative;
-  width: 18.75em;
+  width: 22em;
   height: 18.75em;
   margin: 1.25em;
   // box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07); // Not working?
@@ -358,22 +379,45 @@ h6 {
     background: rgba(41, 164, 133, 0.6);
   }
 
-  &:hover:after {
-    background: rgba(41, 164, 133, 0.9);
+  &:hover {
+    border-color: @blue;
+
+    .home__tile-subtitle {
+      visibility: visible;
+    }
+
+    &:after {
+      background: rgba(41, 164, 133, 0.9);
+    }
   }
 }
 
-.home__tile-flex {
+.home__tile-subtitle {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  color: #fff;
+  font-size: 0.875em;
+  background-color: @blue;
+  padding: 0.625em;
+}
+
+.home__tile-sidebar {
   background-image: url("../images/CodePen_FlexLayout.png");
   background-size: cover;
 
   &:after {
-    content: "Sidebar Flex Layout";
+    content: "Sidebar Layout";
   }
 }
 
 .home__tile-releases {
-
+  background-image: url("../images/release-diagrams.png");
+  background-size: 450%;
+  background-repeat: no-repeat;
 
   &:after {
     content: "Agile Project Breakdown";
@@ -434,6 +478,22 @@ h6 {
 ///////////////////////////////////// CONTACT BODY ///////////////////////////
 
 
+.contact__main .block-b {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  min-height: 60vh;
+
+  .block-left,
+  .block-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 6.25em;
+  }
+}
+
+
 .contact__email-link {
   display: block;
   max-width: 18.75em;
@@ -446,14 +506,17 @@ h6 {
 }
 
 .contact__social-media-wrapper {
-  max-width: 70vw;
+  width: 18.75em;
   margin: 0 auto;
-  padding-bottom: 1.875em;
   display: flex;
   justify-content: space-around;
 
   .social-media-icon {
-    font-size: 3em;
+    font-size: 2em;
+
+    i {
+      margin: 0.2em;
+    }
   }
 }
 
@@ -504,8 +567,9 @@ h6 {
 // }
 
 .contact__section-header {
-  margin: 2em 0 0 0;
-  padding: 1em 0 0.5em;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin: 0 0 1em;
 }
 
 ///////////////////////////////////// SUMMARY ////////////////////////////////
@@ -516,10 +580,35 @@ h6 {
 
 ///////////////////////////////////// STYLEGUIDE ////////////////////////////////
 .styleguide__main-content,
-.snapily__main-content {
+.snapily__main-content,
+.releases__main-content {
   width: 70vw;
   margin: 0 auto;
 }
+
+///////////////////////////////////// SNAPILY // ////////////////////////////////
+.snapily-context {
+  width: 18.75em;
+}
+
+.snapily-logo {
+  width: 40%;
+}
+
+///////////////////////////////////// RELEASES // ///////////////////////////////
+
+.releases-diagrams {
+  width: 100%;
+}
+
+.releases-notes {
+  width: 40%;
+}
+
+.releases-components {
+  width: 80%;
+}
+
 ///////////////////////////////////// FOOTER /////////////////////////////////
 
 .footer {

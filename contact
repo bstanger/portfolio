@@ -37,8 +37,8 @@
     </div>
   </nav>
 
-  <header class="header">
-    <h4 class="header__subtitle">Contact</h4>
+  <header class="header for-project-page">
+    <h4 class="header__page-title">Contact</h4>
   </header>
 
 
@@ -47,8 +47,20 @@
   <section class="contact__main main-block">
 
     <section class="block-b">
-      <h3 class="main-block__header">Questions?  Comments?</h3>
-      <a class="contact__email-link" href="mailto:beccastanger@gmail.com"><button class="contact__email-me">Email Me</button></a>
+      <!-- <h3 class="main-block__header">Questions?  Comments?</h3> -->
+      <div class="block-left">
+        <a class="contact__email-link" href="mailto:beccastanger@gmail.com"><button class="contact__email-me">Email Me</button></a>
+      </div>
+      <div class="block-right">
+        <div>
+          <h4 class="contact__section-header main-block__section-header">Or follow me</h4>
+          <div class="contact__social-media-wrapper">
+            <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- <form class="contact__form" action="mailto:beccastanger@gmail.com" method="post" enctype="text/plain">
@@ -60,14 +72,14 @@
       <input class="contact__send-button" type="submit" value="Send">
     </form> -->
 
-    <section class="block">
+    <!-- <section class="block">
       <h4 class="contact__section-header main-block__section-header">Or follow me</h4>
       <div class="contact__social-media-wrapper">
         <a class="social-media-icon" href="https://www.linkedin.com/in/beccastanger/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <a class="social-media-icon" href="https://github.com/bstanger"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a class="social-media-icon" href="https://codepen.io/bstang/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
       </div>
-    </section>
+    </section> -->
 
   </section>
 
